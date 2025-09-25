@@ -1,0 +1,53 @@
+{
+  "game": {
+    "targetFPS": 60,
+    "gridSize": 40,
+    "gameWidth": 800,
+    "gameHeight": 600
+  },
+
+  "difficulty": {
+    "baseVehicleSpeed": 2.0,
+    "speedIncreasePerCity": 0.15,
+    "vehicleSpawnRate": 0.02,
+    "spawnRateIncreasePerCity": 0.1,
+    "minGapBetweenVehicles": 120,
+    "gapDecreasePerCity": 5
+  },
+
+  "scoring": {
+    "pointsPerHop": 1,
+    "roadCompletionBonus": 10,
+    "cityCompletionBonus": 50,
+    "hopsPerCity": 75,
+    "comboMultiplier": 1.2
+  },
+
+  "cities": [
+    {
+      "name": "Dhaka",
+      "id": "dhaka",
+      "unlockScore": 0,
+      "vehicleTypes": ["cng", "rickshaw", "bus", "truck", "motorcycle", "car", "tempo"],
+      "backgroundColor": "#4A5568",
+      "accentColor": "#F6E05E"
+    }
+  ],
+
+  "vehicles": {
+    "cng": { "width": 48, "height": 24, "speed": 1.5, "spawnWeight": 0.3 },
+    "rickshaw": { "width": 64, "height": 32, "speed": 0.8, "spawnWeight": 0.25 },
+    "bus": { "width": 96, "height": 32, "speed": 1.2, "spawnWeight": 0.1 },
+    "truck": { "width": 128, "height": 40, "speed": 1.0, "spawnWeight": 0.05 },
+    "motorcycle": { "width": 32, "height": 16, "speed": 2.5, "spawnWeight": 0.15 },
+    "car": { "width": 64, "height": 24, "speed": 1.8, "spawnWeight": 0.1 },
+    "tempo": { "width": 56, "height": 28, "speed": 1.3, "spawnWeight": 0.05 }
+  },
+
+  "lanes": {
+    "count": 5,
+    "width": 80,
+    "positions": [80, 160, 240, 320, 400],
+    "safeZones": [0, 480, 560]
+  }
+}
